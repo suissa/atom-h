@@ -14,5 +14,17 @@
     "webschool"
   ],
   "author": "Suissa & Fran",
-  "license": "WTFPL"
+  "license": "WTFPL",
+  "dependencies": {
+    "property-eletronegatividade-de-pauling-h": "^1.0.0",
+    "property-estado-oxidacao-h": "^1.0.0",
+    "property-estrutura-cristalina-h": "^1.0.0",
+    "property-meiavida-h": "^1.0.0",
+    "unity-a": "^1.0.0",
+    "unity-ev": "^1.0.0",
+    "unity-k": "^1.0.0",
+    "unity-kjXmol-1": "^1.0.2",
+    "unity-pa": "^1.0.0",
+    "unity-pm": "^1.0.0"
+  }
 }

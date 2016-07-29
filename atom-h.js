@@ -1,174 +1,135 @@
 module.exports = { 
   simbolo: 'H', 
-  nome: {
-    'pt-br': 'hidrogenio',
-    'en': 'hydrogen',
-  },
+  nome: 'hidrogenio',
   familia: [
     {
-      tipo: 'coluna',
-      valor: '1'
+      coluna: '1'
     }, 
     {
-      tipo: 'grupo',
-      valor: '1A'
+      grupo: '1A'
     }, 
     {
-      tipo: 'descritivo',
-      valor: 'sem familia'
+      descritivo: 'sem familia'
     }
   ], 
   periodo: 1, 
-  massaAtomica: 1.00797,
   numero: {
     eletrons: 1,
     neutrons: 0,
     protons: 1
   },
   distribuicaoEletronica: {
-    k: [
-      {
-        subnivel: 's',
-        eletrons: 1
-      }
-    ],
-    l: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
-    m: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
-    n: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
-    o: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
-    p: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
-    q: [
-      {
-        subnivel: 's',
-        eletrons: 0
-      }
-    ],
+    k: {
+      s: 1
+    },
+    l: {
+      s: 0,
+      p: 0
+    },
+    m: {
+      s: 0,
+      p: 0,
+      d: 0
+    },
+    n: {
+      s: 0,
+      p: 0,
+      d: 0,
+      f: 0
+    },
+    o: {
+      s: 0,
+      p: 0,
+      d: 0,
+      f: 0
+    },
+    p: {
+      s: 0,
+      p: 0,
+      d: 0
+    },
+    q: {
+      s: 0,
+      p: 0
+    }
   },
   propriedades: {
-    fisicas: [
-      {   
-        nome: 'densidade',
+    fisicas: {
+      densidade: {
         valor: 0.0899, 
         unidade: 'kg/m3'
       },
-      {   
-        nome: 'estadodaMateria',
+      estadodaMateria: {   
         valor: 'gasoso' 
       },
-      {   
-        nome: 'raioAtomico',
-        valor: 53,
+      raioAtomico: {
+        valor: 53, 
+        unidade: 'pm'
+      },
+      massaAtomica: {
+        valor: 1.00797, 
+        unidade: 'u'
       }
-    ],
-    quimicas: [ 
-      {   
-        nome: 'meiaVida',
-        valor: 12.3, 
-        unidade: 'a'
+    },
+    quimicas: {
+      meiaVida: require('property-meiavida-h'),
+      estadoOxidacao: require('property-estado-oxidacao-h'),
+      estruturaCristalina: require('property-estrutura-cristalina-h'),
+      eletronegatividadePauling: require('property-eletronegatividade-de-pauling-h'),
+      pontoFusao: {
+        valor: 14.025, 
+        unidade: require('unity-k').unidade
       },
-      {   
-        nome: 'pontoFusao',
-        valor: {}
+      pontoEbulicao: {   
+        valor: 20.268, 
+        unidade: require('unity-k').unidade
       },
-      {   
-        nome: 'pontoFusao',
-        valor: {}
-      },
-      {   
-        nome: 'energiaIonização',
+      energiaIonizacao: {   
         valor: 1312, 
-        unidade: 'kj/mol'
+        unidade: require('unity-kjXmol-1').unidade
       },
-      {   
-        nome: 'estadoOxidacao',
-        valor: '1+' 
-      },
-      {   
-        nome: 'estruturaCristalina',
-        valor: 'hexagonal', 
-        imagem: './hexagonal.png'
-      },
-      {   
-        nome: 'raioCovalente',
+      raioCovalente: {   
         valor: 12.3, 
-        unidade: 'pm'
+        unidade: require('unity-pm').unidade
       },
-      {   
-        nome: 'raioVanderWaals',
+      raioVanderWaals: {   
         valor: 120, 
-        unidade: 'pm'
+        unidade: require('unity-pm').unidade
       },
-      {   
-        nome: 'entalpiadefusao',
+      entalpiadefusao: {   
         valor: 0.05868, 
-        unidade: 'kJ/mol'
+        unidade: require('unity-kjXmol-1').unidade
       },
-      {   
-        nome: 'entalpiadevaporizacao',
+      entalpiadevaporizacao: {   
         valor: 0.44936, 
-        unidade: 'kJ/mol'
+        unidade: require('unity-kjXmol-1').unidade
       },
-      {   
-        nome: 'volumeMolar',
+      volumeMolar: {   
         valor: 0.0000114, 
-        unidade: 'kJ/mol'
+        unidade: require('unity-kjXmol-1').unidade
       },
-      {
-        nome: 'pressaodeVapor',
-        valor: 209, 
-        unidade: 'Pa',
-        tipo: 'pressao'
+      pressaodeVapor: {
+        pressao: {
+          valor: 209, 
+          unidade: require('unity-pa').unidade,
+        },
+        temperatura: {
+          valor: 23, 
+          unidade: require('unity-k').unidade,
+        }
       },
-      {
-        valor: 23, 
-        unidade: 'K',
-        tipo: 'temperatura'
-      },
-      {   
-        nome: 'calorEspecífico',
+      calorEspecífico: {   
         valor: 14304, 
         unidade: 'J/(kg·K)'
       },
-      {   
-        nome: 'eletronegatividadePauling',
-        valor: 2.2, 
-        unidade: 'eV'
-      },
-      {   
-        nome: 'condutividadeEletrica',
+      condutividadeEletrica: {   
         valor: 106, 
         unidade: 'S/m'
       },
-      {
-        nome: 'condutividadeTermica',
+      condutividadeTermica: {
         valor: 0.1815,
         unidade: 'W/(m·K)'
       } 
-    ]
+    }
   }
 }
