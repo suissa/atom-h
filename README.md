@@ -1,14 +1,11 @@
 # Atoms - H
 
-Behold the Hydrogen!
-
-In this *atomic* module we have a lot of data about the H.
+Átomo do Hidrogênio, inicialmente em pt-br.
 
 ## Structure
 
 ```js
-
-simbolo: 'H'module.exports = { 
+module.exports = { 
   simbolo: 'H', 
   nome: 'hidrogenio',
   familia: [
