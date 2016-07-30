@@ -7,15 +7,6 @@ In this *atomic* module we have a lot of data about the H.
 ## Structure
 
 ```js
-# Atoms - H
-
-Behold the Hydrogen!
-
-In this *atomic* module we have a lot of data about the H.
-
-## Structure
-
-```js
 
 simbolo: 'H'module.exports = { 
   simbolo: 'H', 
@@ -422,11 +413,6 @@ nome: {module.exports = {
     }
   }
 }
-
-```
-
-Autor: Suissa
-
 
 ```
 
