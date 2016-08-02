@@ -1,6 +1,6 @@
 {
   "name": "atom-h",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Hydrogen atomic module",
   "main": "atom-h.js",
   "scripts": {
