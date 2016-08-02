@@ -7,7 +7,7 @@
 ```js
 module.exports = { 
   simbolo: 'H', 
-  nome: 'hidrogenio',
+  nome: 'hidrogênio',
   familia: {
     {      
       coluna: '1'
@@ -30,34 +30,22 @@ module.exports = {
       s: 1
     },
     l: {
-      s: 0,
-      p: 0
+      s: 0, p: 0
     },
     m: {
-      s: 0,
-      p: 0,
-      d: 0
+      s: 0, p: 0, d: 0
     },
     n: {
-      s: 0,
-      p: 0,
-      d: 0,
-      f: 0
+      s: 0, p: 0, d: 0, f: 0
     },
     o: {
-      s: 0,
-      p: 0,
-      d: 0,
-      f: 0
+      s: 0, p: 0, d: 0, f: 0
     },
     p: {
-      s: 0,
-      p: 0,
-      d: 0
+      s: 0, p: 0, d: 0
     },
     q: {
-      s: 0,
-      p: 0
+      s: 0, p: 0
     }
   },
   propriedades: {
