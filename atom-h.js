@@ -2,15 +2,9 @@ module.exports = {
   simbolo: 'H', 
   nome: 'hidrogenio',
   familia: {
-    {      
-      coluna: '1'
-    }, 
-    {
-      grupo: '1A'
-    }, 
-    {
-      descritiva: 'sem familia'
-    }
+    { coluna: '1' }, 
+    { grupo: '1A' }, 
+    { descritiva: 'sem familia' }
   }, 
   periodo: 1, 
   numero: {
@@ -19,27 +13,13 @@ module.exports = {
     protons: 1
   },
   distribuicaoEletronica: {
-    k: {
-      s: 1
-    },
-    l: {
-      s: 0, p: 0
-    },
-    m: {
-      s: 0, p: 0, d: 0
-    },
-    n: {
-      s: 0, p: 0, d: 0, f: 0
-    },
-    o: {
-      s: 0, p: 0, d: 0, f: 0
-    },
-    p: {
-      s: 0, p: 0, d: 0
-    },
-    q: {
-      s: 0, p: 0
-    }
+    k: { s: 1 },
+    l: { s: 0, p: 0 },
+    m: { s: 0, p: 0, d: 0 },
+    n: { s: 0, p: 0, d: 0, f: 0 },
+    o: { s: 0, p: 0, d: 0, f: 0 },
+    p: { s: 0, p: 0, d: 0 },
+    q: { s: 0, p: 0 }
   },
   propriedades: {
     fisicas: {
