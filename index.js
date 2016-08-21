@@ -2,9 +2,9 @@ module.exports = {
   simbolo: 'H', 
   nome: 'hidrogenio',
   familia: {
-    { coluna: '1' }, 
-    { grupo: '1A' }, 
-    { descritiva: 'sem familia' }
+    coluna: '1', 
+    grupo: '1A', 
+    descritiva: 'sem familia'
   }, 
   periodo: 1, 
   numero: {
