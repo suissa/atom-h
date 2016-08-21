@@ -4,14 +4,30 @@
 
 ## Estrutura
 
+O nome dos campos **não podem ter acentos**
+
+- simbolo:
+- nome:
+- familia:
+  + coluna:
+  + grupo:
+  + descritiva:
+- periodo:
+- numero:
+  + eletrons:
+  + neutrons:
+  + protons:
+- distribuicaoEletronica:
+- propriedades:
+
 ```js
 module.exports = { 
   simbolo: 'H', 
   nome: 'hidrogenio',
   familia: {
-    { coluna: '1' }, 
-    { grupo: '1A' }, 
-    { descritiva: 'sem familia' }
+    coluna: '1', 
+    grupo: '1A', 
+    descritiva: 'sem familia'
   }, 
   periodo: 1, 
   numero: {
